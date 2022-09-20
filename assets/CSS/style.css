@@ -1,0 +1,122 @@
+:root {
+  --cor-de-fundo: #0f6bae;
+  --cor-form: #2488d6;
+  --cor-titulo: #83B8FF;
+  --cor-fundo-nova-tarefa: #C6CDFF;
+  --cor-botao: ;
+  --cor-add: ;
+  --cor-del: ;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Space Mono';
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  height: 100vh;
+  background-color: #0F2237;
+}
+
+.todo-list {
+  width: 40%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #43485e;
+  border-radius: 10px;
+  min-width: 400px;
+  min-height: 300px;
+  padding: 1rem;
+}
+
+.titulo {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: .5rem 0;
+  border-bottom: 1px solid var(--cor-titulo);
+}
+
+.form {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 10%;
+  padding: 1rem 0;
+  border-radius: 10px;
+  gap: .5rem;
+}
+
+.form-input {
+  border-radius: 25px;
+  border: none;
+  cursor: text;
+  padding-left: .5rem;
+  width: 40%;
+}
+
+.input-time {
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 0 .2rem;
+}
+
+.form-button {
+  border: 1px solid var(--cor-titulo);
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 0 .2rem;
+  width: 20%;
+  background-color: transparent;
+  color: var(--cor-titulo);
+}
+
+.lista {
+  width: 100%;
+  padding: 0;
+}
+
+.tarefa {
+  background-color: var(--cor-fundo-nova-tarefa);
+  color: #F6F1D1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.div-botao {
+  display: flex;
+  gap: 1rem;
+}
+
+.botao-conclui,
+.botao-deleta {
+  border-radius: 10px;
+  border: none;
+  gap: 1rem;
+  padding: .5rem;
+  cursor: pointer;
+}
